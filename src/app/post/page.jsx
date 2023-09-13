@@ -9,7 +9,6 @@ function PostPage() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // Llama a la API para obtener los datos de los posts y usuarios
     async function fetchData() {
       const postsData = await getPosts();
       setPosts(postsData);
